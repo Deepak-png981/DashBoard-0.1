@@ -1,0 +1,260 @@
+/* General styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f3f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Vibrant Navigation Bar styling */
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #6C5CE7, #8E44AD);
+    /* Vibrant gradient background */
+    padding: 20px 50px;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo img {
+    max-height: 60px;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    position: relative;
+}
+
+/* Adding an animated underline effect */
+.navbar nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar nav ul li a:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
+.profile-notifications {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile-notifications a {
+    color: white;
+    font-size: 20px;
+}
+
+.profile img {
+    border-radius: 50%;
+    /* Circular profile picture */
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Vibrant Side Navigation styling */
+.side-nav {
+    width: 80px;
+    /* Adjusted width */
+    background: linear-gradient(45deg, #3498DB, #2980B9);
+    /* Vibrant gradient background */
+    height: 100vh;
+    padding-top: 60px;
+    /* Adjusted spacing from the top */
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
+    /* Enhanced shadow */
+}
+
+.side-nav .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    /* Increased spacing */
+    transition: transform 0.3s ease;
+}
+
+.side-nav .nav-item:hover {
+    transform: scale(1.1);
+    /* Hover effect to scale the icons */
+}
+
+.side-nav .nav-item img {
+    max-width: 40px;
+    /* Adjusted size */
+    margin-bottom: 5px;
+}
+
+.side-nav .nav-item span {
+    font-size: 12px;
+    color: white;
+    opacity: 0;
+    /* Keep the labels hidden as per the image */
+}
+
+/* Vibrant Main Content Area styling */
+main {
+    margin: 30px 100px;
+    /* Adjusted margins */
+    background-color: white;
+    padding: 30px;
+    /* Adjusted padding */
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    /* Enhanced shadow */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+/* Vibrant Information boxes styling */
+.info-boxes {
+    display: flex;
+    gap: 30px;
+    /* Increased gap */
+    margin-bottom: 40px;
+    /* Increased spacing below */
+}
+
+.info-box {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    /* Increased gap */
+    align-items: center;
+    padding: 20px;
+    /* Adjusted padding */
+    background: linear-gradient(45deg, #FF6B81, #FF475D);
+    /* Vibrant gradient background for boxes */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Shadow */
+    color: white;
+    /* Text color */
+}
+
+.info-box img {
+    max-height: 50px;
+    /* Adjusted size */
+    filter: brightness(0) invert(1);
+    /* Making icons white */
+}
+
+.info-content h2 {
+    margin: 0;
+    font-size: 24px;
+    /* Adjusted font size */
+}
+
+.info-content p {
+    font-size: 14px;
+    /* Adjusted font size */
+}
+
+/* Vibrant Table styling */
+.data-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    /* Spacing from the boxes above */
+}
+
+.data-table th,
+.data-table td {
+    padding: 15px;
+    /* Increased padding */
+    border: 1px solid #e0e0e0;
+    /* Lighter border color */
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #f2f3f7;
+    /* Adjusted background color */
+    color: #555;
+    /* Dark text color */
+}
+
+/* Vibrant Footer styling */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #34495E, #2C3E50);
+    /* Dark gradient background */
+    padding: 30px 100px;
+    /* Adjusted padding */
+    color: white;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+    /* Enhanced shadow at the top */
+    border-top-left-radius: 10px;
+    /* Added rounded corners */
+    border-top-right-radius: 10px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h2 {
+    font-size: 20px;
+    /* Adjusted font size */
+    margin-bottom: 20px;
+    /* Adjusted spacing */
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    /* Added spacing between links */
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #E74C3C;
+    /* Vibrant red color on hover */
+}
+
+/* New styles for layout adjustments */
+.container {
+    display: flex;
+}
+
+.side-nav {
+    flex: 0 0 80px;
+    /* Fixed width for the sidebar */
+}
+
+main {
+    flex: 1;
+    /* Allows the main content area to take up the remaining space */
+}
